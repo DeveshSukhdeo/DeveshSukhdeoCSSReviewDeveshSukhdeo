@@ -481,14 +481,11 @@ animation
   animation-fill-mode: forwards;
 }
 
+/*Shorthand property -> animation: [animation name] [animation duration] [animation timing function] [animation delay] [animation iteration count] [animation direction] [animation fill mode]*/
 .shortHand{
   width: 100px;
   height: 100px;
-  background-color: blue;
-  animation-name: example;
-  animation-duration: 5s;
-  animation-delay: 2s;
-  animation: mymove 5s infinite;
+  animation: example 5s linear 2s infinite reverse forwards;
 }
 
 #animations{
