@@ -324,39 +324,42 @@ html {
 #linear:hover{
   transition-timing-function: linear;
   width: 200px; 
-  height: 200px;
+  height: 100px;
   background-color: blue;
 }
 /*Ease*/
 #ease:hover{
   transition-timing-function: ease;
   width: 200px;
-  height: 200px;
+  height: 100px;
   background-color: blue;
 }
 /*Ease In*/
 #easeIn:hover{
   transition-timing-function: ease-in;
   width: 200px;
-  height: 200px;
+  height: 100px;
   background-color: blue;
 }
 /*Ease Out*/
 #easeOut:hover{
   transition-timing-function: ease-out;
   width: 200px;
-  height: 200px;
+  height: 100px;
   background-color: blue;
 }
 /*Ease In Out*/
 #easeInOut:hover{
   transition-timing-function: ease-in-out;
   width: 200px;
-  height: 200px;
+  height: 100px;
   background-color: blue;
   transition-delay: 1s;
 }
-
+#transitions{
+  border: 3px dashed #00a800;
+  background-color: #c7f5c7;
+}
 
 
 /*Animations*/
@@ -374,14 +377,121 @@ animation
 
 /*The animation name*/
 @keyframes example{
-  from{background-color: red;}
-  to{background-color: yellow;}
+  from{background-color: blue;}
+  to{background-color: lawngreen;}
 }
 /*The Element to apply animaation to*/
 .cheeseCake{
   width: 100px;
   height: 100px;
-  background-color: red;
+  background-color: blue;
   animation-name: example;
   animation-duration: 8s;
+}
+
+.bgposition{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 8s;
+}
+#bgptn:hover{
+  transition-timing-function: ease-in-out;
+  width: 200px;
+  height: 200px;
+  background-color: lawngreen;
+}
+
+.boxDelay{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 8s;
+  animation-delay: 2s;
+}
+
+.boxRep{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
+}
+
+.boxReverse{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-direction: reverse;
+}
+
+#curve1{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+#curve2{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+}
+#curve3{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+}
+#curve4{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+}
+#curve5{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+.fillForward{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.shortHand{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation: mymove 5s infinite;
+}
+
+#animations{
+  border: 3px dashed #f58495;
+  background-color: #fddde3;
 }
